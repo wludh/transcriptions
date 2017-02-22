@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: narrative
 title: "Diary of Frank Smith Reader"
 author: Frank Smith Reader
 editor: Mackenzie Brooks

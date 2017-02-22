@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Documentation
-author: Alex Gil
+author: Mackenzie Brooks
 ---
 
 ## Contents
@@ -12,116 +12,71 @@ author: Alex Gil
 
 ---
 
-## Prerequisites
+For Ed documentation, see [GitHub](https://github.com/elotroalex/ed/blob/master/documentation.md).
 
-This documentation was built with beginners in mind, but has the necessary information for more seasoned producers.
+## Why
 
-To install and use Ed you will be using your terminal. If you need a refresher, I highly recommend "[The Command Line Crash Course](http://cli.learncodethehardway.org/book/)." Working knowledge of HTML and CSS is also taken for granted. If you're new to HTML and CSS, you may want to check out the relevant courses on [codecademy.com](https://www.codecademy.com/learn/web).
+Why write in this format for this type of site? Why not Wordpress or DSpace or ArchivesSpace? 
 
-Jekyll does not run very well on Windows machines for now. If you are using Windows, this theme won't work for you, but we hope that you simply deploy our principles, and parts of our stylesheet, on a system like [Hugo](https://gohugo.io/), which does work on Windows.
+Writing in plain text is a preservation strategy. Have you ever had trouble opening an old Word document or other strange file format? Software companies often create their own file formats for use in their applications. If the company goes away, the file format can too. 
 
+Plain text documents contain the text and nothing else. There is no styling or formatting stored in the file. Plain text files don't take up much space and load quickly on phones or weak internet connection. For more, see [Minimal Computing](http://go-dh.github.io/mincomp/).
+
+Applications like Wordpress and ArchivesSpace are powerful, but they are overkill for a website that just wants to provide a clean, reading interface for documents. We use the static site generator [Jekyll](http://jekyllrb.com/) to create Transcriptions @ W&L. Ed is a Jekyll theme for minimal editions. Check out ["How (and Why) to Generate a Static Website Using Jekyll"](http://chronicle.com/blogs/profhacker/jekyll1/60913) for more justification.
+
+## Markdown 
+Markdown is a syntax for writing plain text documents. Markdown allows you to add basic style and formatting to text that will be published on the web. 
+
+[Markdown Guidelines](https://daringfireball.net/projects/markdown/)
+
+~~~ markdown
+# This is a level one heading 
+## This a level two heading
+
+*this is italics*
+**this is bold**
+
+* list 1
+* list 2
+* list 3
+
+> this is a
+> blockquote
+> see? 
+
+*** is a horizontal line
+~~~
+
+Ed uses a specifc style of Markdown called [Kramdown ](http://kramdown.gettalong.org/syntax.html) to handle footnotes.  
+
+## Transcription Style Guide
+What elements will we need to cover?
+
+
+## Metadata
+Each transcription begins with a block of metadata in a format called YAML - YAML Ain't Markup Language. We can add more metadata categories if need be. 
+
+* Layout - determines the genre/format of the text. 
+* Title - title of the text
+* Author - author of the text
+* Editor - person(s) who transcribed the text
+* Rights - statement on intellectual property rights
+* Source - institution, collection, record group or collection number
+* Categories - select a category from a controlled list
+* Publication date - we might want to distinguish between date of creation, date of publication, and date of transcription 
+
+~~~ yaml
 ---
-
-## Installing Ed: Easy
-
-The easy way to do this is not necessarily the more robust, and may simply not work on your system. The easy way could also be called the 'lucky' way. It will work if your system is ready for Ed. Two major caveats to keep in mind if you go the easy route: a) You may run into problems later when some Ed components need updating; and, b) You may run into conflicts if you run several Ruby environments for different projects. That said, if you just want to quickly try Ed, and you don't run into problems installing, this is perhaps the best approach.
-
-
-If you're using a Mac, make sure you have the appropriate version of [XCode command line tools](https://developer.apple.com/xcode/download/) for your OSX. Using the terminal's `cd` command, switch to the directory where you want to install your project. Once inside the folder, you are ready to download and start using Ed. Enter each of these lines into your terminal (remember to ignore the `$`):
-
-~~~ bash
-$ git clone https://github.com/elotroalex/ed.git
-$ cd ed
-$ gem install bundler
-$ bundle install
-~~~
-
-That's it. To see if Ed is working properly we will take advantage of Jekyll's built in server. You can build the first version of your site and run the jekyll server at the same time by entering:
-
-~~~ bash
-$ jekyll serve
-~~~
-
-If at any point during this process you had an error you could not resolve, move on to the next section. If the site was rendered fine, copy the url from your terminal log and paste it into your browser of choice (I recommend Firefox). This url usually looks something like this `http://127.0.0.1:4000/ed`. At this point you should be looking at your very own working version of Ed:
-
-![Your very own Ed]({{ site.baseurl }}/assets/screenshot-home.png)
-
+layout: page
+title: "Diary of Frank Smith Reader"
+author: Frank Smith Reader
+editor: Mackenzie Brooks
+rights: Public Domain
+source: Washington and Lee Special Collections and Archives
+categories: civilwardiaries
+publication-date: 2016
 ---
-
-## Installing Ed: Robust
-
-The first step to install Ed is to download the source files from GitHub. To do so you must have git installed on your computer. You probably have git already, but if you don't, the easiest way is probably to install [Github Desktop](https://desktop.github.com/) (even though we will be using git and github from the terminal in this tutorial). Mac users may want to ensure they have [Xcode](https://developer.apple.com/xcode/) and its command line tools installed as well. To check if git is running on your system enter the following line on your terminal (remember to ignore the $):
-
-~~~ bash
-$ git --version
 ~~~
-
-If you don't get an error, you're good to go. Using the `cd` command on your terminal, navigate to the folder where you keep your web projects. Once you're in the folder where you want Ed to live, download it from github using the following line (remember you can copy and paste):
-
-~~~ bash
-$ git clone https://github.com/elotroalex/ed.git
-~~~
-
-At this point you should navigate inside your Ed project folder and stay there until further notice:
-
-~~~ bash
-$ cd ed
-~~~
-
-Jekyll is a Ruby gem (Ruby's name for software packages). The best way to ensure you have the right environment is to use Ruby Version Manager, or [rvm](https://rvm.io/), and the latest stable version of Ruby. To install rvm *and* a recent version of Ruby at the same time, follow the instructions on rvm's site. Remember to add `--ruby=2.3.0` at the end of the `curl` command to install ruby at the same time. 
-
-After the process runs succesfully, read the last few lines generated by the terminal. You will see final instructions for making rvm run. Once you finish the process, check to see if rvm is running by entering:
-
-~~~ bash
-$ rvm --version
-~~~
-
-If you don't get an error, you're ready for the next step. If you do get an error, and don't feel comfortable troubleshooting on the terminal, this is a good opportunity to reach out to a friend who can help. You can leave me a note on [the issues page](https://github.com/elotroalex/ed/issues), for example. I'll try to get to it as soon as my other commitments permit. If you're comfortable troubleshooting on your own, I recommend Jekyll's own [troubleshooting documentation](http://jekyllrb.com/docs/troubleshooting/). Another great strategy for troubleshooting on the terminal is to copy and paste the errors you receive (sans personal information) into your favorite search engine.
-
-The next step is to create a gemset for your jekyll projects. A gemset is a set of gems. If you don't create and use a gemset, every gem you install will be applied system-wide. This is not necessarily a bad thing, but if you will have several projects with several setups, this strategy will serve you well in the long run. To create a gemset:
-
-~~~ bash
-$ rvm gemset create ed
-~~~
-
-To use the gemset you just created:
-
-~~~ bash
-$ rvm gemset use ed
-~~~
-
-N.B. Everytime you open a new tab or window on your terminal you need to declare your gemset using `rvm gemset use ed`, or else it will revert to `(default)`.
-
-Now that rvm and Ruby are set up, we're ready to install our first gem: Bundler. Bundler is a gem that allows you to install many gems at the same time using Gemfiles, which is a simple list of specific gems that lives in your project folder. Once you install it, you will be ready to run the Gemfile I provided in the source files. To install Bundler:
-
-~~~ bash
-$ gem install bundler
-~~~ 
-
-You're very close. Now that Bundler is installed, the final step is to install the right version of Jekyll. To do so run the Gemfile this way (remember you must be inside the `ed` folder for this to work):
-
-~~~ bash
-$ bundle install
-~~~
-
-
-If you don't get any errors, Ed should work at this point. To see if Ed is working properly we will take advantage of Jekyll's built in server. You can build the first version of your site and run the jekyll server at the same time by entering:
-
-~~~ bash
-$ jekyll serve
-~~~
-
-If you are running multiple Ruby environments using bundler, you will need to add `bundle exec` to the command:
-
-~~~ bash
-$ bundle exec jekyll serve
-~~~
-
-Copy the url from your terminal log and paste it into your browser of choice (I recommend Firefox). This url usually looks something like this `http://127.0.0.1:4000/ed`. At this point you should be looking at your very own working version of Ed:
-
-![Your very own Ed]({{ site.baseurl }}/assets/screenshot-home.png)
-
----
 
 ## Jekyll
 
@@ -149,41 +104,6 @@ Ed is designed for scholars and amateur editors who want to produce either a cle
 
 Our version of Jekyll uses a special Markdown processor called kramdown. The processor can be said to use it's own 'flavor' of Markdown, and sometimes the Markdown syntax will be different than other flavors of Markdown. Kramdown is convenient for scholars because of the way it handles footnotes. You can become familiar with the kramdown syntax in the [kramdown documentation](http://kramdown.gettalong.org/syntax.html). Another way to become familiar is to examine the sample text source files we provided. 
 
----
-
-## Genres
-
-Ed offers three different layouts: poem, narrative and drama. The genre is indicated in the YAML front matter on your texts. The templates that govern how these genres are displayed can be found in the `_layouts` folder. Using these layouts will allow you to tweak the stylesheets according to your different needs. Out of the box, Ed contains some special instructions for poetry in its stylesheets that allow you to deal with some of the peculiarities of poetry layouts.
-
-To indicate lines in poetry we use the line syntax from Markdown:
-
-~~~ markdown
-- Hold fast to dreams
-- For if dreams die
-- Life is a broken-winged bird
-- That cannot fly.
-- Hold fast to dreams
-- For when dreams go
-- Life is a barren field
-- Frozen with snow.
-~~~
-
-To indent specific lines we take advantage of a feature in kramdown that allows us to indicate classes for a line. This approach still allows the line to be readable while editing. 
-
-~~~ markdown
-- {:.indent-3} But O heart! heart! heart!
-- {:.indent-4} O the bleeding drops of red,
-- {:.indent-5} Where on the deck my Captain lies,
-- {:.indent-6} Fallen cold and dead.
-~~~
-
-The `-` at the beginning of each line indicates that these are lines. The `{:.indent-3}` is what we need to in order to indicate the indent value for that line. Values can range from 1-10. You can expand the range or adjust the values in the CSS stylesheet in the `public` folder.
-
-The example from Raisin in the Sun shows us that we don't need much special markup for theater as long as we use CAPITAL LETTERS for speakers. Italics for directions are easy enough. Just use `*` around the words you want to italicize. 
-
-*Narrative of the Life of Frederick Douglass* shows us an example of narrative that includes footnotes and quoted poetry. See the sections below for how to accomplish these different effects. 
-
---- 
 
 ## Footnotes
 
