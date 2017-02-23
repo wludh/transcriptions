@@ -25,5 +25,17 @@ title: "Ed."
 
 </div>
 
+<div class="toc">
+<h2>Civil War Diaries</h2>
+<ul>
+{% for text in site.texts %}
+{% if text.categories contains 'civilwardiaries' %}
+    <li class="post-title"><a href="{{ site.baseurl }}{{ text.url }}">{{ text.title }}</a></li>
+{% endif %}
+{% endfor %}
+
+</ul>
+
+
 
 

@@ -3,15 +3,15 @@
 # Setup
 title:               Transcriptions @ W&L
 tagline:             'A Jekyll theme for minimal editions'
-description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
+description:         'Transcriptions @ W&L provides a clean reading interface for documents in our collections.'
 url:                 'localhost:4000'
 baseurl:             '/ed'
 
 # About/contact
 author:
   name:              Mackenzie Brooks
-  url:               https://twitter.com/elotroalex
-  email:             colibri.alex@gmail.com
+  url:               http://library.wlu.edu
+  email:             brooksm@wlu.edu
 
 # Permalinks
 
