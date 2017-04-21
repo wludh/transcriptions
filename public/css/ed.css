@@ -813,5 +813,10 @@ ol.bibliography {
 	text-indent: -1rem;
 }
 
+/* custom styles */
+p.citation {
+font-size:.9rem;
+
+}
 
 

@@ -1,13 +1,25 @@
 ---
-layout: default
+layout: narrative
 title: The Commissione
 author: Republic of Venice
-source: WLU Special Collections
+editor: Aidan Valente '19
+source: Washington and Lee University Special Collections
+rights: Public Domain
+categories: manuscript
+created-date: ????
+publication-date: 2017
+description: TBD
+notes: TBD
+finding-aid: TBD
+repository: TBD
 ---
+
 ## 1r
 [blank]
+
 ## 1v
 [image]
+
 ## 2r
 __MARCUS
 ANTONIUS
@@ -23,6 +35,7 @@ di, et sij de nostro mandato
 Capitanio della Città nostra di
 Verona per mesi sedeci, e tan:
 to più quanto il tuo Succes:
+
 ## 2v
 sore differirà a *venircci*, ha:
 vendo per la custodia, e con:
@@ -43,6 +56,7 @@ rissa, overo eccessi trà al:
 cuno delli Stipendiati, ove:
 ro Moglie, figlioli, et figlio:
 le di quelli di alcuna sor:
+
 ## 3r
 te, overo Cittadini della Città
 dall' altra debba il Capita:
@@ -63,6 +77,7 @@ si possa far buona Gius:
 titia.
 
 __Delle cause Civili__
+
 ## 3v
 __trà *Sudditi*.__
 
@@ -83,6 +98,7 @@ debito complimento, e sumaria:
 mente far Giustitia.
 
 Et si all' incontro alcuno delli
+
 ## 4r
 stipendiarij sarà tenuto, et
 daverà dar cosa alcuna ad'
@@ -103,6 +119,7 @@ fosse probattione quel ta:
 le non sia proclamato, mà
 debbano esser proclamati qu:
 elli contra li quali vi fosse
+
 ## 4v
 probattione over inditij *que*
 li quali tè paresse quel:

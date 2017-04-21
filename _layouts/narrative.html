@@ -5,5 +5,13 @@ layout: default
 <div class="narrative">
   <h1 class="post-title">{{ page.title }}</h1>
   <p class="citation"> by {{ page.author }}</p>
+  <p class="citation"> Description: {{page.description}}</p>
+  <p class="citation"> Date created: {{page.created-date}}</p>
+  <p class="citation"> Rights: {{page.rights}}</p>
+  <p class="citation"> Transcriber: {{page.editor}}</p>
+  <p class="citation"> Notes: {{page.notes}}</p>
+  <p class="citation"> <a href="{{page.finding-aid | absolute_url}}">Finding Aid</a> | <a href="{{page.repository | absolute_url}}">Digital Collection</a>
+  </p>
+  <hr /> 
   {{ content }}
 </div>
