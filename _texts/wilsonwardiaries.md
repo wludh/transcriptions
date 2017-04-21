@@ -24,3 +24,8 @@ Newmarket Va Thursday May 22d, That portion of Ashby’s Cavalry which has been 
 
 will have to carry me now-sore-back or not. We camped at night in a beautiful meadow near Luray[,] the infantry marching out on the Front Royal Road.
 May 23. Early this morning the Cavalry started on the road to Front-Royal. I accepted Capt Richardson’s invitation to accompany and mess with him during my absence from my company. During the course of the day we overtook and passed Jackson’s Division – Ewell still ahead[.] Our Cavalry turned off on the road to Buckton Station where there were reported to be several hundred Yankees. We surprised them[,] capturing about a dozen prisoners[.] But they formed in the woods and our cavalry had quite a severe fight with them. We were but poorly armed with long-range guns. In this skirmish Capt Sheetz whom we all
+
+## May 23-24 *3*
+regarded as next to Ashby was killed[.] Capt John Fletcher[,] a very brave and determined young officer was also killed. Our loss besides was one man killed and six or eight wounded. We captured some fine Belgian muskets here, their Flag Leut[’]s baggage and everything[,] which we burnt[.] The Cavalry went on to Front Royal[.] Capt R and I staid within ten miles of Buckton Station.
+## May 24 
+By dawn we were in the saddle for Front-Royal. Found the place occupied by our troops, Jackson’s Division quietly eating their breakfast. On going to the Depot found the yard filled with about 400 Yankee prisoners of 1st Md Reg. We got their field officers and

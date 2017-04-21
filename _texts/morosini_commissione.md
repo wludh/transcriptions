@@ -6,9 +6,10 @@ editor: Aidan Valente '19
 source: Washington and Lee University Special Collections
 rights: Public Domain
 categories: manuscript
-created-date: ????
+created-date: 1684
 publication-date: 2017
-description: TBD
+description: This piece is a Venetian commissione issued by Doge Marcantonio Giustinian to
+Gerolimo Morosini, the governor-elect of Verona.
 notes: TBD
 finding-aid: TBD
 repository: TBD

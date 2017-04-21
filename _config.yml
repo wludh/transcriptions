@@ -1,11 +1,11 @@
 # Built with Jekyll 3.2.0
 
 # Setup
-title:               Transcriptions @ W&L
+title:               'Transcriptions @ W&L'
 tagline:             'A Jekyll theme for minimal editions'
 description:         'Transcriptions @ W&L provides a clean reading interface for documents in our collections.'
-url:                 'localhost:4000'
-baseurl:             '/ed'
+url:                 'http://www.mackenziekbrooks.info'
+baseurl:             '/spt'
 
 # About/contact
 author:
